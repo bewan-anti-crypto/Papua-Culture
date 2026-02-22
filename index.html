@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Budaya Papua</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-feather-alt"></i>
+                <h1>Papua<span>Culture</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#katalog">Katalog</a></li>
+                    <li><a href="#filosofi">Filosofi</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="hero">
+        <div class="hero-image">
+            <img src="papua.jpg" alt="Pakaian Adat Papua">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Keindahan Budaya Papua</h1>
+                <p>Pakaian Adat, Mahkota, Noken, dan Kerajinan Tangan Asli Papua</p>
+                <a href="#katalog" class="btn">Lihat Koleksi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG PRODUK -->
+    <section id="katalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Katalog Produk</h2>
+            <div class="product-grid">
+                <!-- Produk Utama: Pakaian Sali -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Pakaian-sali.jpeg" alt="Pakaian Sali">
+                        <span class="badge">Utama</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pakaian Sali</h3>
+                        <p class="product-desc">Pakaian adat perempuan Papua dari kulit kayu. Bahan alami, sarat makna.</p>
+                        <ul class="product-specs">
+                            <li><strong>Bahan:</strong> Kulit kayu</li>
+                            <li><strong>Ukuran:</strong> All size</li>
+                            <li><strong>Asal:</strong> Papua Barat Daya</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="pakaian-sali.html" class="btn-detail">Lihat Detail</a>
+                            <button class="btn-cart" onclick="addToCart('Pakaian Sali')">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk Pendukung: Mahkota Cendrawasih -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="mahkota.jpg" alt="Mahkota Cendrawasih">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mahkota Cendrawasih</h3>
+                        <p class="product-desc">Mahkota dengan bulu burung Cendrawasih asli, simbol kebesaran.</p>
+                        <ul class="product-specs">
+                            <li><strong>Bahan:</strong> Bulu Cendrawasih, kayu</li>
+                            <li><strong>Ukuran:</strong> 40 cm</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="mahkota-cendrawasih.html" class="btn-detail" >Lihat Detail</a>
+                            <button class="btn-cart" onclick="addToCart('Mahkota Cendrawasih')">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk Pendukung: Noken Papua -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="noken.jpg" alt="Noken Papua">
+                    </div>
+                    <div class="product-info">
+                        <h3>Noken Papua</h3>
+                        <p class="product-desc">Tas tradisional anyaman khas Papua, warisan UNESCO.</p>
+                        <ul class="product-specs">
+                            <li><strong>Bahan:</strong> Serat kayu, daun</li>
+                            <li><strong>Ukuran:</strong> 30x40 cm</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="noken.html" class="btn-detail" >Lihat Detail</a>
+                            <button class="btn-cart" onclick="addToCart('Noken Papua')">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk Pendukung: Bulu Ayam Hias -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="ukiran1.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bulu Ayam Hias</h3>
+                        <p class="product-desc">Bulu ayam warna-warni untuk hiasan mahkota dan aksesoris.</p>
+                        <ul class="product-specs">
+                            <li><strong>Bahan:</strong> Bulu ayam</li>
+                            <li><strong>Ukuran:</strong> 20-30 cm</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="mahkota-ukiran.html" class="btn-detail" >Lihat Detail</a>
+                            <button class="btn-cart" onclick="addToCart('Bulu Ayam Hias')">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk Pendukung: Manik-Manik Tradisional -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="manik.jpeg" alt="Manik-Manik">
+                    </div>
+                    <div class="product-info">
+                        <h3>Manik-Manik Tradisional</h3>
+                        <p class="product-desc">Manik-manik warna-warni untuk kalung, gelang, dan hiasan.</p>
+                        <ul class="product-specs">
+                            <li><strong>Bahan:</strong> Kaca, tanah liat</li>
+                            <li><strong>Ukuran:</strong> 0.5-1 cm</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="manik-manik.html" class="btn-detail" >Lihat Detail</a>
+                            <button class="btn-cart" onclick="addToCart('Manik-Manik')">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORYTELLING (FILOSOFI) -->
+    <section id="filosofi" class="philosophy">
+        <div class="container">
+            <h2 class="section-title">Makna di Balik Busana</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Pakaian Adat</h3>
+                    <p>Pakaian adat Papua seperti Sali melambangkan hubungan harmonis manusia dengan alam. Motif dan hiasan mencerminkan status sosial, kedewasaan, dan identitas suku.</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-crown"></i>
+                    <h3>Mahkota</h3>
+                    <p>Mahkota Cendrawasih melambangkan kebesaran, kehormatan, dan koneksi spiritual dengan leluhur. Bulu burung surga ini dipercaya membawa berkah dan perlindungan.</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Noken</h3>
+                    <p>Noken adalah simbol kehidupan sehari-hari, ketekunan, dan kearifan lokal. Anyaman yang kuat mencerminkan gotong royong dan peran perempuan dalam menjaga budaya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI (7 Testimoni) -->
+    <section id="testimoni" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Apa Kata Pelanggan?</h2>
+            <div class="testimonial-grid">
+                <!-- Testimoni 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="ambon.jpg" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Pakaian adatnya sangat indah dan berkualitas. Saya membeli untuk acara budaya di sekolah, semua kagum!"</p>
+                    <h4>Nelza patiapon</h4>
+                    <p class="testimonial-location">Ambon</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimoni 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="biak.jpg" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Mahkota Cendrawasih-nya asli! Sangat cocok untuk istri saya. Pengirimannya pun cepat dan aman."</p>
+                    <h4>george amamehi</h4>
+                    <p class="testimonial-location">Biak</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimoni 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="toraja.png" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Noken yang saya beli sangat kuat dan unik. Saya pakai sehari-hari, banyak yang tanya beli di mana."</p>
+                    <h4>Yuli wasti</h4>
+                    <p class="testimonial-location">toraja</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- Testimoni 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="buton.jpg" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Manik-maniknya warna-warni dan berkualitas. Saya buat kalung sendiri, hasilnya cantik!"</p>
+                    <h4>la Rendi</h4>
+                    <p class="testimonial-location">Sentani</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimoni 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="buton1.jpg" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Bulu ayam hiasnya sangat bagus, cocok untuk dekorasi rumah dan acara adat."</p>
+                    <h4>la Amrull</h4>
+                    <p class="testimonial-location">Nabire</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimoni 6 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="berharap.jpg" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Pakaian Sali yang saya pesan sampai tepat waktu, kualitasnya luar biasa!"</p>
+                    <h4>uno Kogoya</h4>
+                    <p class="testimonial-location">Wamena</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- Testimoni 7 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="banci.jpg" alt="Pelanggan">
+                    </div>
+                    <p class="testimonial-text">"Pelayanan ramah, produk original, saya akan belanja lagi di sini."</p>
+                    <h4>immanuel aditiya manik</h4>
+                    <p class="testimonial-location">Manokwari</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (dengan informasi lokasi) -->
+    <footer id="kontak">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Papua Culture</h3>
+                    <p>Kami adalah platform yang mempromosikan dan menjual produk-produk budaya asli Papua. Setiap pembelian membantu melestarikan warisan leluhur.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak & Lokasi</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Reremi Permai, Manokwari Bar., Kec. Manokwari Bar., Kabupaten Manokwari, Papua Bar. 98312</p>
+                    <p><i class="fas fa-phone"></i>081232117527</p>
+                    <p><i class="fas fa-envelope"></i> smkn2manokwari2024@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Papua Culture. Hak Cipta Dilindungi. keperluan Tugas Sekolah (Bewan setiaji).</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
